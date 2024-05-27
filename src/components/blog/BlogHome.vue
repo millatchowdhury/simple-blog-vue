@@ -1,7 +1,7 @@
 <script setup>
 import {data, fn} from '../../data.js';
 import BlogCard from '../parts/BlogCard.vue';
-console.log(data.posts);
+
 </script>
 
 <template>

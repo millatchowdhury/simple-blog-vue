@@ -5,6 +5,7 @@ defineProps({
 </script>
 
 <template>
+    <router-link :to="`/blog/${post.id}`">
 <div class="max-w-md rounded overflow-hidden shadow-lg">
       <img
         class="w-full"
@@ -21,12 +22,13 @@ defineProps({
         <span
         v-for="tag in post.tags" :key="tag"
         class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-          {{ tag }}
+          {{ tag  }}
         </span>
        
      
       </div>
     </div>
+</router-link>
 </template>
 
 <style scoped>
